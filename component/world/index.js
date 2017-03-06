@@ -13,3 +13,4 @@ class YYY extends Component {
 }
 
 export default YYY
+//document.write("qweqwe")

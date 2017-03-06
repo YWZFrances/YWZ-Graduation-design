@@ -7,3 +7,6 @@ import YYY from './world/index.js';
 
 
 render(<YYY />, document.getElementById('root'));
+
+//import './hello/index.js';
+//import './world/index.js'

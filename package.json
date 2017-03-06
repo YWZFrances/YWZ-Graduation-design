@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "blog": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build"
+    "yue": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build"
   },
   "author": "",
   "license": "ISC",

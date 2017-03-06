@@ -1,7 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 var ROOT_PATH = path.resolve(__dirname);
-var APP_PATH = path.resolve(__dirname, './components/index.js');
+var APP_PATH = path.resolve(__dirname, './component/index.js');
 var BUILD_PATH = path.resolve(__dirname, './build');
 module.exports = {
 	entry:  __dirname + "/component/index.js",//已多次提及的唯一入口文件
