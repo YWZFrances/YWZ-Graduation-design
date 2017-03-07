@@ -12,6 +12,7 @@
 <ul>
      <li>2017/03/04:</li>
           <li>搭建webpack环境</li>
+          <li>简单的试运行测试成功，没有安装其他的loader</li>
 </ul>
 <ul>
      <li>2017/03/05:</li>
@@ -26,7 +27,7 @@
           <li>webpack环境重新启用,问题解决，很蠢的问题、。。。。。。。。kjsdnfkjahsdksdnfksnkdfnskjdfnkj</li>
 </ul>
 <ul>
-     <li>2017/03/06:</li>
+     <li>2017/03/07:</li>
           <li>今天测试一次成功啊。嗨皮</li>
           <li>1：测试react模块化配合webpack loader测试成功</li>
           <li>2：测试react router 路由控制页面渲染成功</li>
