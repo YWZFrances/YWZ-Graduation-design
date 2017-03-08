@@ -1,0 +1,60 @@
+/*全局的样式，给全局头部，底部，内容添加*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box; }
+
+.clear{clear: both;}
+
+img {
+    border: 0;
+    width: 200px;
+    height: 200px; 
+}
+
+li {
+    list-style: none; }
+
+input, textarea {
+    border: none;
+    background: none;
+    appearance: none; }
+
+input, textarea, select {
+    border: 0;
+    outline: none;
+    padding: 0;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit; }
+
+button, input[type="submit"] {
+    border: none;
+    background: none;
+    appearance: none;
+    outline: none; }
+
+a {
+    touch-callout: none;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent; }
+
+i, em {
+    font-style: normal; }
+
+textarea {
+    resize: none; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner,
+textarea::-moz-focus-inner {
+    border: 0;
+    padding: 0; }
+    
+
+
+
+.header{width: 100%;height: 300px;background: red;}
+.q{width: 40%;background: skyblue;float: left;}
+.w{width: 40%;background: saddlebrown;float: left;}
