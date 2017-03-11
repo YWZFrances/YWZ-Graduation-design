@@ -38,3 +38,14 @@
           <li>1：测试项目板块试运行成功</li>
           <li>2：头部全局组件完成</li>
 </ul>
+<ul>
+     <li>2017/03/09:</li>
+          <li>1:复习ES6的代码规范</li>
+          <li>2:nav全局组件完成</li>
+</ul>
+<ul>
+     <li>2017/03/10:</li>
+          <li>1:Footer全局组件完成</li>
+          <li>2:Content组件好难搞</li>
+          <li>2:了解一下IScroll和Swiper框架，以后可能用到</li>
+</ul>
