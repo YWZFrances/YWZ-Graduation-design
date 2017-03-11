@@ -57,8 +57,3 @@
           <li>1:Content组件依然好难搞</li>
           <li>2:继续了解IScroll和Swiper框架，以后可能用到，滚动条的配置和swiper的一些选项，不过没有测试成功</li>
 </ul>
-<ul>
-          <li>1:Content组件依然好难搞</li>
-          <li>2:继续了解IScroll和Swiper框架，以后可能用到，滚动条的配置和swiper的一些选项，不过没有测试成功</li>
-          <li>明天不上班-。-</li>
-</ul>
