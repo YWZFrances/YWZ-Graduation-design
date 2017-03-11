@@ -8,7 +8,7 @@ class YYY extends Component {
 				<Header />
 				<i>123123123</i>
 				<b>456456456</b>
-				<h1>这是路由1</h1>
+				<h1>这是路由1898789789897</h1>
 			</div>
 		);
 	}
