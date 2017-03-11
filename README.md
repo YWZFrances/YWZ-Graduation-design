@@ -1,4 +1,4 @@
-<h1>我的毕业设计</h1>
+<h1 style={color:red;}>我的毕业设计</h1>
 <h2>工作日记</h2>
      
                          <h3>岳文喆</h3>
@@ -11,6 +11,7 @@
 </ul>
 <ul>
      <li>2017/03/04:</li>
+          <li>明天不上班-。-</li>
           <li>搭建webpack环境</li>
           <li>简单的试运行测试成功，没有安装其他的loader</li>
 </ul>
@@ -48,4 +49,10 @@
           <li>1:Footer全局组件完成</li>
           <li>2:Content组件好难搞</li>
           <li>2:了解一下IScroll和Swiper框架，以后可能用到</li>
+</ul>
+<ul>
+     <li>2017/03/11:</li>
+          <li>明天不上班-。-</li>
+          <li>1:Content组件依然好难搞</li>
+          <li>2:继续了解IScroll和Swiper框架，以后可能用到，滚动条的配置和swiper的一些选项，不过没有测试成功</li>
 </ul>
