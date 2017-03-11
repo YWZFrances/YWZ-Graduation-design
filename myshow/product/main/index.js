@@ -1,5 +1,5 @@
 import React,{Component} from  "react"
-import Header from '../../common/components/common.js'
+import {Header} from '../../common/components/common.js'
 
 class YYY extends Component {
 	render() {

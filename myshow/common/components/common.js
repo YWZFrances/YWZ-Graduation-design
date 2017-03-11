@@ -16,10 +16,10 @@ class Header extends Component{
 					<li className="header-tit">
 						{this.props.title}
 					</li>
-					<li className='toCart' style={{marginRight:15px}}>
+					<li className='toCart' style={{marginRight:"15px"}}>
 						{this.props.rightBtn?<a onClick={()=>this.toCart()}>购物车</a>:""}
 					</li>
-					<li className='toCart' style={{marginRight:15px}}>
+					<li className='toCart' style={{marginRight:"15px"}}>
 						{this.props.rightBtn2?<a onClick={()=>this.toMyOrder()}>我的</a>:""}
 					</li>
 				</ul>
@@ -53,4 +53,4 @@ Footer.defaultProps={
 	footerData:['首页','列表','购物车','我的','更多']
 }
 
-export default  Header
+export { Header,Footer}
