@@ -3,7 +3,7 @@
      
                          <h3>岳文喆</h3>
 <h2>走秀网web app的设计与实现</h2>
-<ul>
+<ul style={list-style：none;}>
      <li>2017/03/03:</li>
           <li>1：熟悉react基本语法用法</li>
           <li>2：掌握基本的es6新版语法</li>
@@ -14,6 +14,7 @@
           <li>明天不上班-。-</li>
           <li>搭建webpack环境</li>
           <li>简单的试运行测试成功，没有安装其他的loader</li>
+          <li>明天不上班-。-</li>
 </ul>
 <ul>
      <li>2017/03/05:</li>
@@ -52,7 +53,14 @@
 </ul>
 <ul>
      <li>2017/03/11:</li>
+<<<<<<< HEAD
           <li>明天不上班-。-</li>
           <li>1:Content组件依然好难搞</li>
           <li>2:继续了解IScroll和Swiper框架，以后可能用到，滚动条的配置和swiper的一些选项，不过没有测试成功</li>
 </ul>
+=======
+          <li>1:Content组件依然好难搞</li>
+          <li>2:继续了解IScroll和Swiper框架，以后可能用到，滚动条的配置和swiper的一些选项，不过没有测试成功</li>
+          <li>明天不上班-。-</li>
+</ul>
+>>>>>>> ee1f03721628880bf4a193306758f770711c48e7
