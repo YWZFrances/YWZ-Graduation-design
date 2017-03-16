@@ -5,18 +5,13 @@ import React, {Component} from  "react"
 import ReactDOM from "react-dom"
 import {Router,Route,hashHistory,Link} from "react-router"
 
+import IndexPage from "./product/main/indexPage"
+import ListPage from "./product/main/listPage"
 
-
-import YYY from "./product/main/index.js"
-import WWW from "./user/main/login.js"
 ReactDOM.render(<Router history={hashHistory}>
-
-
-    <Route path="login" component={WWW}  />
-
-
-    <Route path="/" component={YYY}  />
-
+	  		
+    <Route path="/" component={IndexPage}  />
+	<Route path="list" component={ListPage}  />
 
 </Router>,document.getElementById("root"));
 
