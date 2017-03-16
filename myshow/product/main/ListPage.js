@@ -1,8 +1,8 @@
 import {Header,Footer,Content,SubHeader} from "../../common/components/common"
-import ProductList from "../components/productList.js"//还没写？？？？怎么搞
+import ProductList from "../components/productList.js"
 import {ScrollOptions} from "../../common/config/config.js"
-import React, {Components} from "react"
-import ReactIScroll from "react-iscroll"
+import React, {Component} from "react"
+import ReactIScroll from "reactjs-iscroll"
 //商品分类列表
 class ClassList extends Component{
 	constructor(props){
@@ -42,13 +42,13 @@ class ListPage extends Component{
 		this.linenumber = 5;
 		this.pageCode=0;
 		this.refresh=false;
-		$get("http://datainfo.duapp.com/shopdata/getclass.php",(data)=>{
+		$.get("http://datainfo.duapp.com/shopdata/getclass.php",(data)=>{
 			if(typeof data === 'string'){
 				data=JSON.parse(data)
 			}
 			console.log(data)
 			this.setState({
-				classData:data;
+				classData:data
 			})
 		},"json");
 		//请求商品数据
