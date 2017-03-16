@@ -1,6 +1,5 @@
-/**
- * Created by hasee on 2017/1/3.
- */
+
+
 import React, {Component} from  "react"
 import ReactDOM from "react-dom"
 import {Router,Route,hashHistory,Link} from "react-router"
