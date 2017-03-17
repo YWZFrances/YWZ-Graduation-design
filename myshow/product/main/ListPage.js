@@ -1,5 +1,5 @@
 import {Header,Footer,Content,SubHeader} from "../../common/components/common"
-import ProductList from "../components/productList.js"
+import ProductList from "./productList.js"
 import {ScrollOptions} from "../../common/config/config.js"
 import React, {Component} from "react"
 import ReactIScroll from "reactjs-iscroll"
