@@ -1,11 +1,11 @@
-.product-list img { height: 200px;}
+.product-list img { height: 180px;width:180px;}
 .product-list{
 	width: 100%;
 	overflow: hidden;
 	float: left;
 }
 .product-list li{
-	padding:10px;
+	padding:4px;
 	width:50%;
 	height:280px;
 	text-align: center;

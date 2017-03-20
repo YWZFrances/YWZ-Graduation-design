@@ -108,8 +108,8 @@ class Content extends Component {
         //组件渲染完成以后，获取scroll-wrap，创建iscroll
         //如果需要iscroll再创建
         this.props.hasIScroll && (this.myScroll = new IScroll(this.refs.scrollWrap))
-        //console.log(this.refs.scrollWrap)
-       // console.log(this.myScroll)
+          console.log(this.refs.scrollWrap)
+          console.log(this.myScroll)
 
     }
     componentDidUpdate() {

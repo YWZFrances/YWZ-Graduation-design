@@ -3,6 +3,7 @@ import ProductList from "./productList.js"
 import {ScrollOptions} from "../../common/config/config.js"
 import React, {Component} from "react"
 import ReactIScroll from "reactjs-iscroll"
+console.log(ScrollOptions);
 //商品分类列表
 class ClassList extends Component{
 	constructor(props){
@@ -107,9 +108,9 @@ class ListPage extends Component{
                 <SubHeader>
                     <ClassList changeClassID={(id)=>this.changeClassID(id)}  classData={this.state.classData} />
                 </SubHeader>
-                <Content hasFooter={true} hasSubHeader={true}  >
+                <Content hasFooter={true} hasSubHeader={true}   >
 
-                    <ReactIScroll ref="iScroll" 
+                    <ReactIScroll iScroll={IScroll} ref="iScroll"
                                   options={ScrollOptions}
                                   onScroll={(myScroll)=>this.onScroll(myScroll)}
                                   onScrollEnd={this.onScrollEnd}>
