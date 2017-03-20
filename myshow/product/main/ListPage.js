@@ -101,24 +101,26 @@ class ListPage extends Component{
 	}
 	render(){
 		console.log("render");
-		return(
-			<div className="page" id="list-page">
-				<Header title="新品上市" hasBack={true} rightBtn={true} />
-				<SubHeader>
-					<ClassList changeClassID={(id)=>this.changeClassID(id)} classData={this.state.classData} />
-				</SubHeader>
-				<Content hasFooter={true} hasSubHeader={true}>
-					
-					<ReactIScroll ref='iScroll' iScroll={IScroll}
-								options={ScrollOptions}
-								onScroll={(myScroll)=>this.onScroll(myScroll)}
-								onScrollEnd={this.state.productData} />
-						<ProductList productData={this.state.productData} />
-					
-				</Content>
-				<Footer active={1} />
-			</div>
-		)
+		return (
+            <div className="page" id="list-page">
+                <Header title="新品上市" hasSearch={true} rightBtn={true}  />
+                <SubHeader>
+                    <ClassList changeClassID={(id)=>this.changeClassID(id)}  classData={this.state.classData} />
+                </SubHeader>
+                <Content hasFooter={true} hasSubHeader={true}  >
+
+                    <ReactIScroll ref="iScroll" 
+                                  options={ScrollOptions}
+                                  onScroll={(myScroll)=>this.onScroll(myScroll)}
+                                  onScrollEnd={this.onScrollEnd}>
+                        <ProductList productData={this.state.productData} />
+                    </ReactIScroll>
+                    
+
+                </Content>
+                <Footer active={1} />
+            </div>
+        )
 	}
 }
 ListPage.defaultProps={

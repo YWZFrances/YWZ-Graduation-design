@@ -9,7 +9,7 @@ class ProductList extends Component{
 	toDetail(ele){
 		var footmarkData = JSON.parse(window.localStorage.getItem("footmarkData") || "[]");
 		
-		for (var i =0;i<footmarkData.length;i+=){
+		for (var i =0;i<footmarkData.length;i++){
 			if(footmarkData[i].goodsID==ele.goodsID){
 				footmarkData.splice(i,1);
 				break
@@ -25,14 +25,14 @@ class ProductList extends Component{
 				{
 					this.props.productData.map(
 						(ele,i)=><li key={i} onClick={()=>this.toDetail(ele)}>
-							<Link to{"/detail/"+ele.goodsID}>
+							
 								<img src = {ele.goodsListImg} />
 								<p>{ele.goodsName}</p>
 								<p>
 									<em>¥{ele.price}</em>
 									<del>¥999</del>
 								</p>
-							</Link>
+							
 						</li>)
 				}
 			</ul>

@@ -44,7 +44,7 @@ class Footer extends Component{
 	constructor(props){
 		super(props)
 	}
-	handleCilck(i,index){
+	handleClick(i,index){
 		console.log(222222)
 		var path = index==0?"/":index==1?"list":index==2?"cart":index==3?"show":"more"
 		window.location.hash="#/"+path
@@ -79,39 +79,43 @@ class SubHeader extends Component{
 	}
 }
 
-class Content extends Component{
-	constructor(props){
-		super(props)
-	}
-	render(){
-		let contentStyle = {
-			"overflowY":this.props.hasIScroll?"hidden":"auto"
-		};
-		let contentClass = "content"
-			+(this.props.hasFooter?"has-footer":"")+(this.props.hasSubHeader?"has-sub-header":"");
-			//this.props.hasIScroll 如果需要iscroll就必须引入iscroll的结构
-			return (
-				<div className={contentClass} style={contentStyle}>
-					{this.props.hasIScroll?
-					<div className="scroll-wrap" ref="scrollWrap">
-						<div className="scroller">
-							{this.props.children}
-						</div>
-					</div>:this.props.children}
-				</div>
-			)
-	}
-	componentDidMount(){
-		//组件渲染完以后，获取scroll-wrap。创建iscroll
-		//如果需要iscroll再创建
-		this.props.hasIScroll && (this.myScroll = new IScroll(this.refs.scrollWraop))
-		//console.log(this.refs.scrollWrap)
-		//console.log(this.myScroll)
-	}
-	componentDidUpdate(){
-		//组件更新的时候，也更新iscroll
-		this.props.hasIScroll && this.myScroll.refresh()
-	}
+class Content extends Component {
+    constructor(props) {
+        super(props)
+    }
+    render() {
+    	
+        let contentStyle = {
+            "overflowY":this.props.hasIScroll?"hidden":"auto"
+        };
+        let contentClass = "content"
+            +(this.props.hasFooter?" has-footer":"")
+            +(this.props.hasSubHeader?" has-sub-header":"");
+
+        //this.props.hasIScroll  如果需要iscroll就必须引入iscroll的结构
+
+        return <div className={contentClass} style={contentStyle}>
+            {this.props.hasIScroll?
+                <div className="scroll-wrap" ref="scrollWrap">
+                    <div className="scroller">
+                        {this.props.children}
+                    </div>
+                </div>:this.props.children}
+        </div>
+    }
+    componentDidMount() {
+
+        //组件渲染完成以后，获取scroll-wrap，创建iscroll
+        //如果需要iscroll再创建
+        this.props.hasIScroll && (this.myScroll = new IScroll(this.refs.scrollWrap))
+        //console.log(this.refs.scrollWrap)
+       // console.log(this.myScroll)
+
+    }
+    componentDidUpdate() {
+        //组件更新的时候，也更新iscroll
+        this.props.hasIScroll && this.myScroll.refresh()
+    }
 }
 
 export { Header,Footer,Content,SubHeader}
