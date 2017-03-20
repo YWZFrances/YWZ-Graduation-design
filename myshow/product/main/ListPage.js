@@ -56,6 +56,49 @@ class ListPage extends Component{
 		//改变this指向
 		this.onScrollEnd = this.onScrollEnd.bind(this);
 	}
+	changeClassID(id){
+		console.log(id);
+		console.log(this)
+		this.classID = id;
+		this.pageCode = 0;//重置页面
+		this.getProductData()
+	}
+	getProductData(){
+		$.getJSON("http://datainfo.duapp.com/shopdata/getGoods.php?callback=?",{
+			"classID":this.classID,
+			"linenumber":this.linenumber,
+			"pageCode":this.pageCode
+		},(data)=>{
+			//刷新需要覆盖之前的数据，加载需要和之前的数据合并
+			if(data){
+				this.setState({
+					productData:this.pageCode==0?data:this.state.productData.concat(data)
+				});
+			}
+		})
+	}
+	onScroll(myScroll){
+		console.log("scroll");
+		if(myScroll.y>60){
+			console.log("刷新");
+			this.refresh=true
+		}
+	}
+	onScrollEnd(myScroll){
+		//myScroll 是ReactIScroll 提供的操作滚动条的对象
+		console.log("end");
+		if(this.refresh){
+			//需要刷新就刷新	
+			this.pageCode=0;
+			this.getProductData();
+			this.refresh = false;
+		}else if(myScroll.y-myScroll.maxScrollY<=20){
+			//如果当前的滚动位置和最大的滚动数值底下小于20，就加载更多
+			console.log("加载更多");
+			this.pageCode++;
+			this.getProductData()
+		}
+	}
 	render(){
 		console.log("render");
 		return(
