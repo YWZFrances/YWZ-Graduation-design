@@ -26,6 +26,20 @@ class DetailPage extends Component{
 			})
 		})
 	}
+	addCart(){
+    	//判断用户是否登录
+    	var userID = Tools.getUserID();
+    	console.log(userID)
+    	userID && $.get("http://datainfo.duapp.com/shopdata/updatecar.php",
+    	{userID:userID,goodsID:this.state.goodsID,number:1},function(data){
+    		console.log(data)
+    		if(data==1){
+    			alert("添加成功")
+    		}else{
+    			alert("添加失败")
+    		}
+    	})
+    }
 	toCart(){
 		Tools.getUserID()&&(window.location.hash = "#/cart");
 	}
