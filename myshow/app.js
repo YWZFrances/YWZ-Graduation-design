@@ -4,11 +4,11 @@ import React, {Component} from  "react"
 import ReactDOM from "react-dom"
 import {Router,Route,hashHistory,Link} from "react-router"
 
-import IndexPage from "./product/main/indexPage.js"
-import ListPage from "./product/main/listPage.js"
-import DetailPage from "./product/main/detailPage.js"
-import Information from "./product/main/proInformation.js"
-import CartPage from "./order/main/cartPage.js"
+import IndexPage from "./product/main/indexPage"
+import ListPage from "./product/main/listPage"
+import DetailPage from "./product/main/detailPage"
+import Information from "./product/main/proInformation"
+import CartPage from "./order/main/cartPage"
 
 ReactDOM.render(<Router history={hashHistory}>
 	  		

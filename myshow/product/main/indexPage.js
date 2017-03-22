@@ -1,5 +1,6 @@
 import React,{Component} from  "react"
-import {Header} from '../../common/components/common.js'
+import {Header} from '../../common/components/common'
+import "../style/indexPage.css"
 
 class IndexPage extends Component {
 	render() {
