@@ -1,7 +1,7 @@
 import {Header,Content} from "../../common/components/common"
 import {Tools} from "../../common/tools/tools"
 import React,{Component} from "react"
-import "../styles/loginPage.css"
+import "../style/loginPage.css"
 class LoginPage extends Component{
 	constructor(props){
 		super(props)

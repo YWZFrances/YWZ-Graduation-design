@@ -1,6 +1,6 @@
 import React,{Component} from "react"
 import {Header,Content,Footer} from "../../common/components/common"
-import "../styles/morePage.css"
+import "../style/morePage.css"
 
 class MorePage extends Component {
 	constructor(props){

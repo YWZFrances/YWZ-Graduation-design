@@ -1,7 +1,7 @@
 import {Header,Content} from "../../common/components/common"
 import React,{Component} from "react"
 import {Tools} from "../../common/tools/tools"
-import "../styles/registerPage.css"
+import "../style/registerPage.css"
 class RegisterPage extends Component{
 	constructor(props){
 		super(props)
