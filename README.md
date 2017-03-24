@@ -15,7 +15,9 @@
 
 
 ###所用技术
+
 ###主要代码块
+
 ```
 var path = require('path');
 var webpack = require('webpack');
@@ -50,6 +52,7 @@ module.exports = {
 	</body>
 ```
 ###完成阶段
+
 - [x]webpack环境的搭建和主要loder的安装使用
 - [x]分模块建立项目目录完成测试以及webpack.config.js的配置
 - [x]完成项目，本地服务器试运行
