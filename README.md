@@ -1,8 +1,7 @@
-
+[github项目地址](https://github.com/YWZFrances/YWZ-Graduation-design)
+[设计文档地址](http://yuewenzhe.duapp.com/build/Design-document.html)
 <h1>我的毕业设计</h1>
 <h2>工作日记</h2>
-<h3>岳文喆</h3>
-<h2>走秀网web app的设计与实现</h2>
 <ul>
      <li><h2>--------2017/03/03:--------</h2></li>
           <li>1：熟悉react基本语法用法</li>
