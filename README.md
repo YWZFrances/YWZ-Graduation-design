@@ -1,23 +1,18 @@
 
-#我的毕业设计
-
-###走秀网web app的设计与实现
-
+我的毕业设计
+====
+走秀网web app的设计与实现
+===========
 [github项目地址](https://github.com/YWZFrances/YWZ-Graduation-design)
-
 （下载地址，以后再放）
-
 **岳文喆**
-
 **目录**
 
 [TOC]
 
 
 ###所用技术
-
 ###主要代码块
-
 ```
 var path = require('path');
 var webpack = require('webpack');
@@ -52,7 +47,6 @@ module.exports = {
 	</body>
 ```
 ###完成阶段
-
 - [x]webpack环境的搭建和主要loder的安装使用
 - [x]分模块建立项目目录完成测试以及webpack.config.js的配置
 - [x]完成项目，本地服务器试运行
