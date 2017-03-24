@@ -1,43 +1,6 @@
 <h1 style={color:red;}>我的毕业设计</h1>
 <h2>工作日记</h2>
 <h3>岳文喆</h3>
-#啊啊啊啊啊啊
-1.升水是是是是
-2.问问喂我恩恩
-3.二位喂我我
->document.write("123")
-[baidu](http://www.baidu.com)
-**粗体**
-*斜体*
-`
-	render(){
-		return(
-			<div className="content"id="content-page">
-				<Header title="注册" hasBack={true}/>
-				<Content  hasFooter={false}>
-					<ul className="content-list">
-						<li className="list-in">
-							<input type="text" className="username" placeholder="请输入账户" />
-							<p className="tx1">账户名称：</p>
-						</li>
-						<li className="list-in">
-							<input type="password" className="password" placeholder="请输入密码" />
-							<p className="tx2">登录密码：</p>
-						</li>
-						<li className="list-in">
-							<input type="password" className="aginpassword" placeholder="请输入密码" />
-							<p className="tx3">确认密码：</p>
-						</li>
-					</ul>
-					<div className="list-bt">
-						<button className="bt" onClick={()=>this.RegisteredIn()}>注册</button>
-					</div>
-				</Content>
-			</div>
-		)
-	}
-`
-***
 <h2>走秀网web app的设计与实现</h2>
 <ul style={list-style:none;}>
      <li><h2>--------2017/03/03:--------</h2></li>
