@@ -1,45 +1,8 @@
-<h1 style={color:red;}>我的毕业设计</h1>
+<h1>我的毕业设计</h1>
 <h2>工作日记</h2>
 <h3>岳文喆</h3>
-#啊啊啊啊啊啊
-1.升水是是是是
-2.问问喂我恩恩
-3.二位喂我我
->document.write("123")
-[baidu](http://www.baidu.com)
-**粗体**
-*斜体*
-`
-	render(){
-		return(
-			<div className="content"id="content-page">
-				<Header title="注册" hasBack={true}/>
-				<Content  hasFooter={false}>
-					<ul className="content-list">
-						<li className="list-in">
-							<input type="text" className="username" placeholder="请输入账户" />
-							<p className="tx1">账户名称：</p>
-						</li>
-						<li className="list-in">
-							<input type="password" className="password" placeholder="请输入密码" />
-							<p className="tx2">登录密码：</p>
-						</li>
-						<li className="list-in">
-							<input type="password" className="aginpassword" placeholder="请输入密码" />
-							<p className="tx3">确认密码：</p>
-						</li>
-					</ul>
-					<div className="list-bt">
-						<button className="bt" onClick={()=>this.RegisteredIn()}>注册</button>
-					</div>
-				</Content>
-			</div>
-		)
-	}
-`
-***
 <h2>走秀网web app的设计与实现</h2>
-<ul style={list-style:none;}>
+<ul>
      <li><h2>--------2017/03/03:--------</h2></li>
           <li>1：熟悉react基本语法用法</li>
           <li>2：掌握基本的es6新版语法</li>
@@ -161,6 +124,12 @@
           <li>2：注册页面基本逻辑</li>
           <li>3：更多页面基本逻辑</li>
           <li>样式我就先都放一边，等逻辑写对了再搞这个样式，应该不会有影响的(写样式太单一了，影响逻辑思维)</li>
+</ul>
+<ul>
+     <li>--------2017/03/21:--------</li>
+          <li>markdown学习，用来写项目文档</li>
+          <li>2.登录注册更多修改完成，样式大致写完，先这样测试用</li>
+          <li>3.markdown真的挺好用的</li>
 </ul>
 <p>
 	重点问题！不要忘记
