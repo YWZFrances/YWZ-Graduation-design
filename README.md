@@ -1,5 +1,6 @@
-[github项目地址](https://github.com/YWZFrances/YWZ-Graduation-design)
-[设计文档地址](http://yuewenzhe.duapp.com/build/Design-document.html)
+[github项目地址](https://github.com/YWZFrances/YWZ-Graduation-design)</br>
+[设计文档地址](http://yuewenzhe.duapp.com/build/Design-document.html)</br>
+(下载地址，以后再说)
 <h1>我的毕业设计</h1>
 <h2>工作日记</h2>
 <ul>
@@ -56,10 +57,6 @@
           <li>2:继续了解IScroll和Swiper框架，以后可能用到，滚动条的配置和swiper的一些选项，不过没有测试成功</li>
 </ul>
 <ul>
-     <li>--------2017/03/12:--------</li>
-          <li>1:设计没有动，看了下SQL server 和java</li>
-</ul>
-<ul>
      <li>--------2017/03/13:--------</li>
           <li>1:写完全局组件，包括头，尾，nav和content</li>
           <li>2:写完全局样式</li>
@@ -91,10 +88,7 @@
 <ul>
      <li>--------2017/03/18:--------</li>
           <li>龙口出差一天</li>
-</ul>
-<ul>
-     <li>--------2017/03/19:--------</li>
-          <li>不上班，打球去</li>
+          <li>明天不上班</li>
 </ul>
 <ul>
      <li>--------2017/03/20:--------</li>
@@ -126,10 +120,22 @@
           <li>样式我就先都放一边，等逻辑写对了再搞这个样式，应该不会有影响的(写样式太单一了，影响逻辑思维)</li>
 </ul>
 <ul>
-     <li>--------2017/03/21:--------</li>
+     <li>--------2017/03/24:--------</li>
           <li>markdown学习，用来写项目文档</li>
           <li>2.登录注册更多修改完成，样式大致写完，先这样测试用</li>
           <li>3.markdown真的挺好用的</li>
+</ul>
+<ul>
+     <li>--------2017/03/25:--------</li>
+          <li>1.完成订单页面基本逻辑(发现全局组件的问题)</li>
+          <li>2.修改全局组件，基本没发现bug</li>
+          <li>3.完成我的基本样式</li>
+          <li>明天不上班-。-</li>
+</ul>
+<ul>
+     <li>--------2017/03/27:--------</li>
+          <li>1.完成修改密码</li>
+          <li>2.user模块的部分问题解决</li>
 </ul>
 <p>
 	重点问题！不要忘记

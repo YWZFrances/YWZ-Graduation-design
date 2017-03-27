@@ -29,6 +29,9 @@ class Header extends Component{
 						{this.props.rightBtn?<a onClick={()=>this.toCart()}>购物车</a>:""}
 					</li>
 					<li className='toCart' style={{marginRight:"15px"}}>
+						{this.props.rightBtn1}
+					</li>
+					<li className='toCart' style={{marginRight:"15px"}}>
 						{this.props.rightBtn2?<a onClick={()=>this.toMyOrder()}>我的</a>:""}
 					</li>
 				</ul>
@@ -45,27 +48,27 @@ class Footer extends Component{
 		super(props)
 	}
 	handleClick(i,index){
-		console.log(222222)
 		var path = index==0?"/":index==1?"list":index==2?"cart":index==3?"show":"more"
 		window.location.hash="#/"+path
 	}
 	render(){
-		return (
-			<div className="footer">
-				<ul className='footer-list'>
+		return(
+			<div className="footer" >
+			
+				<ul className="footer-list ">
 					{
-						this.props.footerData.map((ele,index)=><li key={index} onClick={()=>this.handleClick(this.index)}>
-							<a className={index==this.props.active?"active":''}>{ele}</a>
+						this.props.footerData.map((ele,index)=><li key={index} onClick={()=>this.handleClick(this,index)}>
+							<a className={index==this.props.active?"active":""}>{ele}</a>
 						</li>)
 					}
 				</ul>
 			</div>
 		)
 	}
-}
+};
 Footer.defaultProps={
-	footerData:['首页','列表','购物车','我的','更多']
-}
+    footerData:["首页","列表","购物车","我的","更多"]
+};
 
 //this.props.children 属性 他表示组件的所有子节点
 class SubHeader extends Component{

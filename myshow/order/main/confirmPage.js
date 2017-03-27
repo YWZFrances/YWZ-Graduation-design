@@ -3,7 +3,7 @@
  */
 import {Header,Content} from  "../../common/components/common"
 import React,{Component} from  "react"
-import  "../styles/confirm.css"
+import  "../style/confirm.css"
 
 //订单内容部分---------------------------------------------------------------------
 class OrderProductInfo extends Component {
@@ -116,8 +116,8 @@ class ConfirmPage extends Component {
                 <Header title="确认订单" rightBtn2={<a href="javascript:;" onClick={()=>this.toMyorder()}>我的</a>} />
                 <Content hasFooter={true}>
                     <div className="ads-info">
-                    	<p>收货人:成敏    电话 <span>13111112222</span></p>
-                    	<p>收货地址:北科</p>
+                    	<p>收货人:某某某    电话 <span>13111112222</span></p>
+                    	<p>收货地址:哪哪哪</p>
                     </div>
                     <div className="order-info">
                         <OrderProductInfo productInfo={data.productInfo} />

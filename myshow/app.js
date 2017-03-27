@@ -12,6 +12,8 @@ import CartPage from "./order/main/cartPage"
 import LoginPage from "./user/main/loginPage"
 import RegisterPage from "./user/main/registerPage"
 import MorePage from "./user/main/morePage"
+import ConfirmPage from "./order/main/confirmPage"
+import ChangePage from "./user/main/changePage"
 
 ReactDOM.render(<Router history={hashHistory}>
 	  		
@@ -23,6 +25,8 @@ ReactDOM.render(<Router history={hashHistory}>
 	<Route path="login" component={LoginPage}  />
 	<Route path="register" component={RegisterPage}  />
 	<Route path="more" component={MorePage}  />
+	<Route path="confirm" component={ConfirmPage}  />
+	<Route path="change" component={ChangePage}  />
 	
 </Router>,document.getElementById("root"));
 
