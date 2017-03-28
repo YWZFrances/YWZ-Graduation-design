@@ -7,6 +7,7 @@ class RegisterPage extends Component{
 		super(props)
 		//初始状态
 		this.state={
+			value:"",
 			username:"",
 			password:"",
 			login:false
@@ -18,6 +19,7 @@ class RegisterPage extends Component{
 		this.setState({
 			username:ev.target.value
 		})
+		console.log(username)
 	}
 	filterPassword(ev){
 		//改变状态，输入密码
@@ -88,8 +90,8 @@ class RegisterPage extends Component{
 				<Header title="注册" hasBack={true}/>
 				<Content  hasFooter={false}>
 					<ul className="content-list">
-						<li className="list-in">
-							<input type="text" className="username" placeholder="请输入账户" />
+						<li className="list-in" onClick={()=>this.handleClick()}>
+							<input type="text" className="username" placeholder="请输入账户" ref="userName" />
 							<p className="tx1">账户名称：</p>
 						</li>
 						<li className="list-in">
