@@ -13,7 +13,7 @@ class MorePage extends Component {
 		//用三目运算来判断所要跳转的页面
 		//当index=0时，跳转到change页面，index=2,3时跳转到more页面
 		//window.location.hash="#/"+path是通过hash值来跳转
-		var path = index==0?"change":index==1?"view":index==2?"guanyu":"login"
+		var path = index==0?"change":index==1?"feedback":index==2?"about":"login"
 		if(index==3){
 			window.localStorage.removeItem("userID");
 		}

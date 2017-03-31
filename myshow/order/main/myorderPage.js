@@ -1,6 +1,6 @@
 import React,{Component} from "react"
 import {Header,SubHeader,Content} from "../../common/components/common"
-import "../styles/myorder.css"
+import "../style/myorder.css"
 
 class StateList extends  Component{
 

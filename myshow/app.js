@@ -16,6 +16,8 @@ import ConfirmPage from "./order/main/confirmPage"
 import ChangePage from "./user/main/changePage"
 import ShowPage from "./user/main/showPage"
 import FeedbackPage from "./user/main/feedbackPage"
+import OrderListPage from "./order/main/myorderPage"
+import AboutPage from "./user/main/aboutPage"
 
 ReactDOM.render(<Router history={hashHistory}>
 	  		
@@ -31,6 +33,8 @@ ReactDOM.render(<Router history={hashHistory}>
 	<Route path="change" component={ChangePage}  />
 	<Route path="show" component={ShowPage}  />
 	<Route path="feedback" component={FeedbackPage}  />
+	<Route path="myorder" component={OrderListPage}  />
+	<Route path="about" component={AboutPage}  />
 	
 </Router>,document.getElementById("root"));
 
