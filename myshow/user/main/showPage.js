@@ -16,7 +16,7 @@ class ShowPage extends Component{
 	}
 	handleClick(i,index){
 		console.log(1222)
-		var path = index==0?"myorder":index==1?"youhui":index==2?"history":"shoucang"
+		var path = index==0?"myorder":index==1?"discount":index==2?"history":"collection"
 		window.location.hash="#/"+path
 	}
 	
@@ -27,10 +27,9 @@ class ShowPage extends Component{
 				<Content hasFooter={true}>
 					<div className="con">
 						<div className="top">
-							<i className="iconfont icon-siji"></i>
 							<div className="right">
 								<p className="name-wrap"><span className="name">昵称:</span><em className="showname">{this.state.showname}</em></p>
-								<p className="price-wrap"><span className="price">余额:</span><em className="red">895,554,215,321.30</em></p>
+								<p className="price-wrap"><span className="price">余额:</span><em className="red">895,554,215,321.30￥</em></p>
 							</div>
 						</div>
 						<div className="bottom">

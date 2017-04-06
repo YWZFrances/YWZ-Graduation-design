@@ -5,7 +5,7 @@ import React, {Component} from  "react"
 
 
 
-class GuanyuPage extends Component　{
+class DiscountPage extends Component　{
     constructor(props){
         super(props)
     }
@@ -26,4 +26,4 @@ class GuanyuPage extends Component　{
         )
     }
 }
-export  default  GuanyuPage
+export  default  DiscountPage

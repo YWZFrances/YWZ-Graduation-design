@@ -55,6 +55,7 @@ class LoginPage extends Component{
 					var data={status:"login",userID:user,password:pass}
 					$.get("http://datainfo.duapp.com/shopdata/userinfo.php",data,function(data){				
 						console.log(data)
+						console.log(data.password)
 						if(data==0){
 							alert("用户名不存在")
 						}else if(data==2){

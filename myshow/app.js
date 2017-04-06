@@ -1,5 +1,4 @@
 
-
 import React, {Component} from  "react"
 import ReactDOM from "react-dom"
 import {Router,Route,hashHistory,Link} from "react-router"
@@ -18,6 +17,9 @@ import ShowPage from "./user/main/showPage"
 import FeedbackPage from "./user/main/feedbackPage"
 import OrderListPage from "./order/main/myorderPage"
 import AboutPage from "./user/main/aboutPage"
+import CollectionPage from "./user/main/collectionPage"
+import DiscountPage from "./user/main/discountPage"
+import HistoryPage from "./user/main/historyPage"
 
 ReactDOM.render(<Router history={hashHistory}>
 	  		
@@ -35,9 +37,9 @@ ReactDOM.render(<Router history={hashHistory}>
 	<Route path="feedback" component={FeedbackPage}  />
 	<Route path="myorder" component={OrderListPage}  />
 	<Route path="about" component={AboutPage}  />
+	<Route path="collection" component={CollectionPage}  />
+	<Route path="discount" component={DiscountPage}  />
+	<Route path="history" component={HistoryPage}  />
 	
 </Router>,document.getElementById("root"));
 
-if (module.hot) {
-    module.hot.accept();
-}

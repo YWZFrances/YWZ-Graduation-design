@@ -66,10 +66,8 @@ class RegisterPage extends Component{
 			        		}else if(data==1){
 			    				alert("注册成功")	
 			    				//当返回数据为1时可以注册，此时将注册信息存入localstorage里面
-				        		
 			        			window.location.hash="#/login"  //注册成功后跳转至登录页面  
 			        		}else{
-			    				console.log(data)
 			    				console.log("数据库报错")
 			        		}
 			        	},"json")
